@@ -6,12 +6,11 @@ Welcome. This is my personal website. It is a static site hosted via github page
 ## Reminders For Me...
 
 ### Overview
-Github pages is a static only hosting option, meaning no server side scripting. ~~Modularity is done with ajax instead.
-The menu at the top of the page issues ajax calls to html files in the pages folder. With this setup, each page will not be able to recieve its own url and therefore cannot be bookmarked. This is good enough for my personal site, but I can't do anything fancy here.~~ To solve the lack of modularity issue, I use a nodejs script to read modules in the modules folder and compile them into the static html pages. Grunt, together with packages specified below are used to compile and minify Sass and Javascript files.
+Github pages is static only, meaning no server side scripting. To make up for the lack of a framework, I use the Node environment to build this website using grunt, html-modules, sass, browserify, etc. The result is a static site that is good enough for use as my personal site for now, but can't do anything fancy. Dependencies are listed at the bottom, they are used to compile and minify the HTML, Sass and Javascript files.
 
 ### Installation  
 
-Clone repository, then install packages
+Clone repository, then install packages.
 ```
 npm install
 ```
@@ -46,11 +45,11 @@ Then run the host script. (configured in `package.json`)
 ```
 npm run host
 ```
-The home page should open automatically in the browser, if not go to http://127.0.0.1:3000/ . Alternatively, use any other means to host the site, ~~but it must run of a server for the ajax to work.~~
+The home page should open automatically in the browser, if not go to http://127.0.0.1:3000/ . Alternatively, use any other means to host the site, ~~but it must run from a server for the ajax to work.~~
 
 
 ### Production
-Make sure the site has been built is is running locally, then push to origin. The site is automatically hosted at https://earltilluck.github.io/
+Make sure the site has been built and is working, then push to origin. The site is automatically hosted at https://earltilluck.github.io/
 
 
 ### List of dependencies
@@ -59,6 +58,11 @@ All dependencies are Dev-Dependencies.
   * grunt - run tasks using a config. Tasks include analyzing JS/CSS, compiling and minifying.
   * browsersList (list of supported browsers,) this value is shared by packages as a standard config, see '.browserslistrc' file.
   * grunt-contrib-watch - automatically run grunt tasks whenever files are modified.
+
+* HTML
+  * posthtml - run html post processors. Processors specified below.
+  * posthtml-modules - Allows the use of html modules.
+  * htmlnano - minifies and cleans up the html.
 
 * CSS
   * grunt-contrib-sass - compile sass code.
