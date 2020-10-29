@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "host": "live-server --port=3000"
+    "watch": "grunt watch",
+    "build": "grunt",
+    "host": "cd docs && live-server --port=3000"
   },
   "repository": {
     "type": "git",
@@ -29,9 +31,9 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
+    "grunt-posthtml": "^0.5.2",
     "htmlnano": "^0.2.7",
     "pixrem": "^5.0.0",
-    "posthtml": "^0.13.4",
     "posthtml-modules": "^0.6.2"
   }
 }

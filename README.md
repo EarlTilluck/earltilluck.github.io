@@ -18,9 +18,13 @@ npm install
 ### Development
 
 #### Coding
-Grunt is used to automate tasks, a list of dependencies are located below. Run the grunt watch 
+~~Grunt is used to automate tasks, a list of dependencies are located below. Run the grunt watch 
 process to compile and minify files automatically while coding, or run the default grunt task 
-to do so manually. See `gruntfile.js` for config.
+to do so manually. See `gruntfile.js` for config.~~
+```
+npm run watch
+npm run build 
+```
 ```
 grunt watch
 
