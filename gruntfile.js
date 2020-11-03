@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         tasks: ['lint-js', 'pack-js', 'min-js']
       },
       options: {
-        spawn: false, // speeds up the time, and prevents issues
+        spawn: true, // prevents issues 
       }
     }
   });

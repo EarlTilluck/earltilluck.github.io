@@ -1,0 +1,22 @@
+// fonts
+$open-sans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// mobile first media lengths. 
+// Set mobile styles as default, then additional styles per expanded view. 
+// use @media(min-width: __) {}
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$exlarge: 1200px;
+
+//colors
+$orange: #F95700;
+$white: #fff;
+$black: #000;
+$light-blue: #90AFC5;
+$blue: #336B87;
+$dark: #2A3132;
+$brown: #763626;
+$sweetcorn: #F2EDD7;
+$toffee: #755139;

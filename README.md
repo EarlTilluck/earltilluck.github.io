@@ -45,9 +45,9 @@ Use [live-server](https://www.npmjs.com/package/live-server) to as a hot-swappin
 ```
 npm install -g live-server
 ```
-Then run the host script. (configured in `package.json`)
+Then run the start script. (configured in `package.json`)
 ```
-npm run host
+npm run start
 ```
 The home page should open automatically in the browser, if not go to http://127.0.0.1:3000/ . Alternatively, use any other means to host the site, ~~but it must run from a server for the ajax to work.~~
 

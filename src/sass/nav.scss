@@ -1,0 +1,99 @@
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-logo {
+  img {
+    width: 75px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: fixed;
+  width: 50%;
+  left: 100%;
+  top: 0;
+  transition: all 0.5s ease-out;
+  z-index: 2;
+  background-color: grey;
+  border-left: 1px solid #444;
+  border-bottom: 1px solid #444;
+
+  @media(min-width: $medium) {
+    position: static;
+    width: 80%;
+    flex-direction: row;
+    border: none;
+    background: none;
+  }
+}
+
+.nav-toggle-container {
+  margin-left: auto;
+  display: block;
+  margin-right: 20px;
+
+  @media (min-width: $medium) {
+    display: none;
+  }
+
+  .nav-toggle {
+    span {
+      font-size: 3rem;
+    }
+  }
+}
+
+
+
+.nav-close-button {
+  align-self: flex-end;
+  display: block;
+
+  span {
+    font-size: 3rem;
+  }
+
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 20px;
+
+  @media (min-width: $medium) {
+    margin-right: 20px;
+    padding: 0;
+  }
+
+}
+
+.move-left {
+  left: 50% !important;
+}
+
+.dblock {
+  display: block !important;
+}
