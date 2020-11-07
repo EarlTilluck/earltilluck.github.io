@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     uglify: {
       my_target: {
         files: {
-          'docs/js/script.min.js': ['docs/js/script.js'] // output : input
+          'docs/js/script.min.js': ['docs/js/script.js'], // output : input
         }
       }
     },
@@ -84,7 +84,7 @@ module.exports = function (grunt) {
         tasks: ['lint-js', 'pack-js', 'min-js']
       },
       options: {
-        spawn: true, // prevents issues 
+        spawn: false, // faster 
       }
     }
   });

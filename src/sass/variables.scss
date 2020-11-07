@@ -1,6 +1,8 @@
 // fonts
-$open-sans: 'Open Sans', sans-serif;
-$roboto: 'Roboto', sans-serif;
+$open-sans: 'Open Sans',
+sans-serif;
+$roboto: 'Roboto',
+sans-serif;
 
 // mobile first media lengths. 
 // Set mobile styles as default, then additional styles per expanded view. 
@@ -11,12 +13,28 @@ $large: 992px;
 $exlarge: 1200px;
 
 //colors
-$orange: #F95700;
 $white: #fff;
 $black: #000;
+$orange: #f85f1c;
+$gainsboro: #e0e0e0;
 $light-blue: #90AFC5;
 $blue: #336B87;
-$dark: #2A3132;
+$slate: #292929;
 $brown: #763626;
 $sweetcorn: #F2EDD7;
 $toffee: #755139;
+$grey: #444;
+
+
+.dblock {
+  display: block !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+

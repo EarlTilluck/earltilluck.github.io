@@ -1,0 +1,40 @@
+.cover {
+  background-color: $slate;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+
+  h1 {
+    color: $white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: darkgrey;
+    text-align: left;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+
+}
+
+
+.stack-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  i {
+    font-size: 4rem;
+    color: $white;
+    background-color: $toffee;
+    padding: 10px;
+    margin: 10px;
+  }
+}

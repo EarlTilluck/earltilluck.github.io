@@ -16,7 +16,7 @@ nav {
 
 .nav-logo {
   img {
-    width: 75px;
+    width: 50px;
     margin-left: 20px;
     margin-top: 20px;
   }
@@ -29,14 +29,15 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-end;
   position: fixed;
-  width: 50%;
+  width: 40%;
   left: 100%;
   top: 0;
   transition: all 0.5s ease-out;
   z-index: 2;
-  background-color: grey;
-  border-left: 1px solid #444;
-  border-bottom: 1px solid #444;
+  background-color: $slate;
+  border-left: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+
 
   @media(min-width: $medium) {
     position: static;
@@ -46,6 +47,56 @@ nav {
     background: none;
   }
 }
+
+.nav-items>div {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 20px;
+  color: $black;
+  transition: all .5s ease-in;
+  border-top: 1px solid $grey;
+  color: $white;
+  flex-grow: 1;
+
+
+  @media (min-width: $medium) {
+    margin-right: 40px;
+    padding: 0;
+    font-size: 1rem;
+    border: none;
+    color: $black;
+    flex-grow: 0;
+  }
+
+}
+
+.nav-items a:hover {
+  color: $orange;
+}
+
+.nav-close-button {
+  align-self: flex-end;
+  display: block;
+  border: none !important;
+  background: none !important;
+  margin-left: auto;
+  flex-grow: 0 !important;
+
+  span {
+    font-size: 3rem;
+  }
+
+  @media (min-width: $medium) {
+    display: none;
+  }
+}
+
 
 .nav-toggle-container {
   margin-left: auto;
@@ -64,36 +115,10 @@ nav {
 }
 
 
-
-.nav-close-button {
-  align-self: flex-end;
-  display: block;
-
-  span {
-    font-size: 3rem;
-  }
-
-  @media (min-width: $medium) {
-    display: none;
-  }
-}
-
-.nav-items a {
-  text-decoration: none;
-  font-size: 1.4rem;
-  padding: 20px;
-
-  @media (min-width: $medium) {
-    margin-right: 20px;
-    padding: 0;
-  }
-
-}
-
 .move-left {
-  left: 50% !important;
+  left: 60% !important;
 }
 
-.dblock {
-  display: block !important;
+.nav-highlighted {
+  color: $orange !important;
 }
