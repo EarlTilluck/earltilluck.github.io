@@ -21,7 +21,8 @@ h6 {
 }
 
 p,
-a {
+a,
+li {
   font-family: $roboto;
   //color: $black;
 }
@@ -35,3 +36,12 @@ a {
 .orange {
   color: $orange;
 }
+
+/*
+.col-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+*/

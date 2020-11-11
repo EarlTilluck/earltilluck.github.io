@@ -1,17 +1,26 @@
 .cover {
   background-color: $slate;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 10%;
+
+  @media(min-width: $medium) {
+    height: 600px;
+  }
 
   h1 {
     color: $white;
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @media(min-width: $medium) {
+      font-size: 3rem;
+    }
+
   }
 
   h2 {
@@ -19,22 +28,138 @@
     color: darkgrey;
     text-align: left;
     font-weight: 100;
+    font-size: 1rem;
+
+    @media(min-width: $medium) {
+      font-size: 2rem;
+    }
+  }
+
+
+
+}
+
+
+#home-section-1 {
+  padding: 0 10%;
+  margin-top: 75px;
+
+  @media(min-width: $medium) {
+    //padding: 20px 40px;
+  }
+
+  h2 {
+    //text-align: center;
+    //margin-left: 40px;
     font-size: 2rem;
+    font-weight: 100;
+    //display: none;
+
+    @media(min-width: $medium) {
+      font-size: 3rem;
+    }
+  }
+
+
+
+  .card {
+    padding: 20px 0;
+    //border: 1px solid $slate;
+    //border-radius: 5px;
+    //margin-bottom: 25px;
+    //box-shadow: 1px 1px;
+    //background-image: linear-gradient(45deg, $turq, $blue);
+    //color: white;
+
+    @media(min-width: 1344px) {
+      //width: auto;
+    }
+  }
+
+  .card>div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+
+    @media(min-width: $medium) {
+      font-size: 3rem;
+    }
+
+  }
+
+  i {
+    color: $orange;
+    text-align: left;
+    font-size: 4rem;
+    margin-right: 15px;
+
+    @media(min-width: $medium) {
+      font-size: 6rem;
+      margin-right: 25px;
+    }
+
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 10px 0;
+
+    @media(min-width: $medium) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+}
+
+.stack-icons {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $slate;
+  padding: 5%;
+
+  i {
+    font-size: 3rem;
+    color: $white;
+    background-color: $slate;
+    padding: 5px;
+    margin: 5px;
+
+    @media(min-width: $medium) {
+      font-size: 5rem;
+      padding: 10px;
+      margin: 10px;
+    }
   }
 
 }
 
 
-.stack-icons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.in-between-home-section {
+  font-size: 1rem;
+  padding: 0 10%;
 
-  i {
-    font-size: 4rem;
-    color: $white;
-    background-color: $toffee;
-    padding: 10px;
-    margin: 10px;
+  @media(min-width: $medium) {
+    font-size: 1.5rem;
   }
 }

@@ -1,7 +1,7 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 // place marker for current page in the nav
 function highlightNavLink (){
-  var id = $('#page-id').text();
+  const id = $('#page-id').text();
   if (id) {
     $('.nav-items a:contains("' + id + '")').addClass('nav-highlighted');
   }
@@ -35,13 +35,13 @@ function wordDown(elem, text, index) {
 
 // animate the cover text
 function animateCover() {
-  var elem = $('.cover .switch-me');
+  const elem = $('.cover .switch-me');
 
   // if the cover element is on the page...
   if (elem.text()) {
 
     // set up animation variables
-    var words = ['Scalable', 'Usable', 'Beautiful'];
+    const words = ['Scalable', 'Usable', 'Beautiful'];
     var wordIndex = 2;
     var letterIndex = 8;
     var upwards = false;
@@ -85,6 +85,35 @@ function animateCover() {
   }  
 }
 
+// wiggle some text on the screen
+function wiggle() {
+  const elems = $('.wiggle');
+  var left = 0;
+  var top = 10;
+  var up = false;
+  $(elems).css({ 'top': top });
+
+  setInterval(function(){
+    
+    //elems.each(function (i, elem) {
+      //left = Math.floor(Math.random() * 41); // random between 0 and num-1 
+      //top = Math.floor(Math.random() * 41);
+      //console.log(up + ' -- ' + top);
+      if (up) {
+        up = false;
+        top = 10;
+      } else {
+        up = true;
+        top = 0;
+      }
+      $(elems).css({'top': top});
+      
+     //});
+
+  }, 3100);
+}
+
+
 // ON READY... Do this...
 $(document).ready(function () {
   
@@ -98,6 +127,9 @@ $(document).ready(function () {
 
   // animate the cover on home page. should not run if it is not the home page.
   animateCover();
+
+  // wiggle some text on the screen
+  wiggle();
 });
 
 // on window resize (desktops), slide the menu away if it is visible
