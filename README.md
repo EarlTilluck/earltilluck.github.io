@@ -6,7 +6,7 @@ Welcome. This is my personal website. It is a static site hosted via github page
 ## Reminders For Me...
 
 ### Overview
-Github pages is static only, meaning no server side scripting. To make up for the lack of a framework, I use the Node environment to build this website using grunt, html-modules, sass, browserify, etc. The result is a static site that is good enough for use as my personal site for now, but can't do anything fancy. Dependencies are listed at the bottom, they are used to compile and minify the HTML, Sass and Javascript files.
+Github pages is static only, meaning no server side scripting. To make up for the lack of a framework, I built this website using html-modules. Dependencies are listed at the bottom, they are used to compile and minify the HTML, Sass and Javascript files.
 
 ### Installation  
 
@@ -18,30 +18,23 @@ npm install
 ### Development
 
 #### Coding
-~~Grunt is used to automate tasks, a list of dependencies are located below. Run the grunt watch 
+Grunt is used to automate tasks, a list of dependencies are located below. Run the grunt watch 
 process to compile and minify files automatically while coding, or run the default grunt task 
-to do so manually. See `gruntfile.js` for config.~~
+to do so manually. See `gruntfile.js` for config.
 ```
-npm run watch
-npm run build 
-```
-```
+#Automated:
+
+npm run watch 
+#Or 
 grunt watch
 
-#Or
+#Manually:
 
 grunt
 ```
 
-
-#### Building
-Update the configuration in `compile.js` then run it to build the static pages. 
-```
-node compile
-```
-
 #### Running
-Use [live-server](https://www.npmjs.com/package/live-server) to as a hot-swapping local host for the site. Pages should reload automatically whenever a new build is created. live-server should be installed as a global package.
+Use [live-server](https://www.npmjs.com/package/live-server) to as a hot-swapping development server for the site. Pages should reload automatically whenever a new build is created. live-server should be installed as a global package.
 ```
 npm install -g live-server
 ```
@@ -49,7 +42,7 @@ Then run the start script. (configured in `package.json`)
 ```
 npm run start
 ```
-The home page should open automatically in the browser, if not go to http://127.0.0.1:3000/ . Alternatively, use any other means to host the site, ~~but it must run from a server for the ajax to work.~~
+The home page should open automatically in the browser, if not go to http://127.0.0.1:3000/ . Alternatively, use any other means to host the site. Some features may not work if the pages a opened directly.
 
 
 ### Production

@@ -22,6 +22,7 @@ h6 {
 
 p,
 a,
+i,
 li {
   font-family: $roboto;
   //color: $black;
@@ -37,11 +38,64 @@ li {
   color: $orange;
 }
 
-/*
-.col-3 {
+.two-buttons {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+
+  .btn-solid {
+    border: 2px solid $orange;
+    background-color: $orange;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: $white;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    border-radius: 3px;
+    width: 90%;
+    text-align: center;
+
+    @media(min-width: $small) {
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  .btn-solid:hover {
+    background-color: $slate;
+    border-color: $slate;
+  }
+
+  .btn-outline {
+    border: 2px solid $orange;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: $orange;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    border-radius: 3px;
+    width: 90%;
+    text-align: center;
+
+    @media(min-width: $small) {
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  .btn-outline:hover {
+    background-color: $slate;
+    border-color: $slate;
+    color: $white;
+  }
 }
-*/

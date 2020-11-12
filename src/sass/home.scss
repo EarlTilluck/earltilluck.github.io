@@ -34,13 +34,10 @@
       font-size: 2rem;
     }
   }
-
-
-
 }
 
 
-#home-section-1 {
+.home-section {
   padding: 0 10%;
   margin-top: 75px;
 
@@ -115,7 +112,7 @@
 
   }
 
-  li {
+  p, li {
     list-style-type: none;
     font-size: 1rem;
     font-weight: 100;
@@ -128,6 +125,7 @@
   }
 
 }
+
 
 .stack-icons {
   margin-top: 75px;
@@ -152,14 +150,4 @@
     }
   }
 
-}
-
-
-.in-between-home-section {
-  font-size: 1rem;
-  padding: 0 10%;
-
-  @media(min-width: $medium) {
-    font-size: 1.5rem;
-  }
 }
