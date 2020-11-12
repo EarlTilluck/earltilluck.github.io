@@ -112,7 +112,8 @@
 
   }
 
-  p, li {
+  p,
+  li {
     list-style-type: none;
     font-size: 1rem;
     font-weight: 100;
@@ -123,6 +124,25 @@
     }
 
   }
+
+  li>a {
+    font-size: 1.5rem;
+    background-color: $orange;
+    color: $white;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 1s ease-in-out;
+    margin-top: 20px;
+    display: inline-block;
+    width: 150px;
+    border-radius: 3px;
+  }
+
+  li>a:hover {
+    background-color: $slate;
+    margin-left: 5px;
+  }
+
 
 }
 

@@ -51,9 +51,9 @@ li {
     margin-right: 20px;
     margin-bottom: 20px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px;
     color: $white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     text-decoration: none;
     transition: all 1s ease-in-out;
@@ -62,7 +62,7 @@ li {
     text-align: center;
 
     @media(min-width: $small) {
-      width: auto;
+      width: 150px;
       text-align: left;
     }
   }
@@ -77,9 +77,9 @@ li {
     margin-right: 20px;
     margin-bottom: 20px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px;
     color: $orange;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     text-decoration: none;
     transition: all 1s ease-in-out;
@@ -88,7 +88,7 @@ li {
     text-align: center;
 
     @media(min-width: $small) {
-      width: auto;
+      width: 150px;
       text-align: left;
     }
   }
