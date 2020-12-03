@@ -1,0 +1,144 @@
+.experience-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 5px;
+
+  @media (min-width: $small) {
+    padding: 40px 55px;
+  }
+
+  h2 {
+    width: 90%;
+  }
+
+  p {
+    font-size: 1.2rem;
+    width: 90%;
+    line-height: 150%;
+  }
+
+  a {
+    color: $orange;
+
+    i {
+      font-size: 1rem;
+    }
+  }
+}
+
+.experience-content {
+
+  padding: 10px 5px;
+
+  @media (min-width: $small) {
+    padding: 10px 55px;
+  }
+
+
+  h2 {
+    background-color: $slate;
+    color: $white;
+    padding: 10px 20px;
+    margin: 40px 0;
+  }
+
+  .twocol {
+    display: flex;
+    flex-wrap: wrap;
+
+    .twocol-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @media (min-width: $medium) {
+        width: 50%;
+      }
+
+      a {
+        width: 75%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        transition: all 0.5s ease-in-out;
+        color: $orange;
+        position: relative;
+
+        @media (min-width: $medium) {
+          width: 44%;
+          margin-right: 2%;
+        }
+
+        img {
+          width: 100%;
+          transition: all 0.5s ease-in-out;
+        }
+
+        img:hover {
+          border: 2px solid $orange;
+        }
+
+        i {
+          display: none;
+        }
+
+      }
+
+      a:hover {
+        width: 77%;
+
+        @media (min-width: $medium) {
+          width: 46%;
+        }
+
+        i {
+          display: block;
+          position: absolute;
+          background-color: $white;
+          top: -2%;
+          left: 98%;
+        }
+      }
+
+
+    }
+
+    .twocol-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      @media (min-width: $medium) {
+        width: 50%;
+      }
+
+      p {
+        font-size: 1.2rem;
+        width: 90%;
+        line-height: 150%;
+      }
+
+      a {
+        color: $orange;
+
+        i {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+
+}
+
+.experience-after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}

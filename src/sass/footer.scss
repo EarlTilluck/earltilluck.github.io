@@ -2,32 +2,58 @@
   background-color: $slate;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  //align-items: center;
   padding: 40px 20px;
 
   @media(min-width: $medium) {
-    flex-direction: row;
-    justify-content: center;
+    //flex-direction: row;
+    //justify-content: center;
     padding: 40px;
   }
 
-  div {
+  .footer-info {
     display: flex;
     //flex-grow: 1;
-    margin: 0;
+    margin: 0 40px;
     flex-direction: column;
     justify-content: flex-start;
-    width: 75%;
-
-    @media (min-width: $small) {
-      width: 45%;
-    }
+    //width: 75%;
 
     @media (min-width: $medium) {
-      margin: 0 40px;
-      width: auto;
+      //margin: 20px 40px;
+      //width: auto;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $white;
+      transition: all 1s;
+      font-size: 1.5rem;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+
+
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      //margin: 20px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $white;
+      transition: all 1s;
+      font-size: 1.5rem;
+      margin: 3px 15px;
     }
   }
 
@@ -44,22 +70,14 @@
     color: $white;
   }
 
-  a {
-    text-decoration: none;
-    color: $white;
-    transition: all 1s;
-    font-size: 1.5rem;
-    margin: 10px 0;
-  }
+
 
   a:hover {
     color: $orange;
   }
 
-  i{
+  i {
     font-size: 2rem;
-    margin-right: 15px;
-    margin-bottom: 15px;
   }
 
 
