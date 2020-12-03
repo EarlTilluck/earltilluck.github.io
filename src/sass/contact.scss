@@ -1,0 +1,40 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 55px 0;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $slate;
+    padding: 2%;
+    border-radius: 5px;
+    width: 86%;
+
+    @media (min-width: $small) {
+      padding: 20px;
+      width: 70%;
+    }
+
+    @media (min-width: $medium) {
+      padding: 40px;
+      width: 50%;
+    }
+
+    p {
+      font-size: 1rem;
+
+      @media (min-width: $small) {
+        font-size: 1.2rem;
+      }
+    }
+
+    a {
+      color: $orange;
+    }
+  }
+}
