@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@use '../node_modules/bootstrap/scss/bootstrap';
+
+$white: #fff;
+$black: #000;
+$orange: #f85f1c;
+$gainsboro: #e0e0e0;
+$light-blue: #90AFC5;
+$blue: #336B87;
+$slate: #292929;
+$brown: #763626;
+$sweetcorn: #F2EDD7;
+$toffee: #755139;
+$grey: #444;
+$turq: #4bc1ff;
+$pink: #ff84af;
+$coral: #ff9439;
+
+h1 {
+  color: $turq;
+}
+
+body {
+  background-color: $slate;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $white;
+}
+
+.card-title {
+  color: $black;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: $white;
+}
+
+.bigtext {
+  font-size: 1.5rem;
+}
+
+a {
+  color: $turq;
+}
+
+a:hover {
+  color: $coral;
+}
+
+.img-thumbnail {
+  height: 150px;
+}
+
+.bordered {
+  border: 1px solid $brown;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.circle-me {
+  height: 95px;
+  text-align: center;
+}
+
+.circle-reviews {
+  height: 95px;
+  text-align: center;
+}
+
+blockquote {
+  color: $white;
+}
+
+
+.spacer {
+  height: 50px;
+  width: 100%;
+}
